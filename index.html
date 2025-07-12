@@ -446,7 +446,7 @@
     
     <header>
         <nav>
-            <div class="logo">🍔 FoodieHub</div>
+            <div class="logo">🍽️ Warung Nusantara</div>
             <button class="cart-btn" onclick="toggleCart()">
                 🛒 Keranjang (<span id="cart-count">0</span>)
             </button>
@@ -455,8 +455,8 @@
 
     <main>
         <section class="hero">
-            <h1>Selamat Datang di FoodieHub</h1>
-            <p>Pesan makanan favorit Anda dengan mudah dan cepat!</p>
+            <h1>Warung Nusantara</h1>
+            <p>Rasakan Kelezatan Makanan Tradisional Indonesia!</p>
         </section>
 
         <section class="products" id="products">
@@ -480,49 +480,133 @@
     </div>
 
     <script>
-        // Product data
+        // Product data with Indonesian warung menu
         const products = [
             {
                 id: 1,
-                name: "Burger Deluxe",
-                price: 45000,
-                emoji: "🍔",
-                description: "Burger premium dengan daging sapi, keju, dan sayuran segar"
+                name: "Nasi Gudeg",
+                price: 18000,
+                emoji: "🍛",
+                description: "Nasi dengan gudeg khas Yogyakarta, ayam, telur, dan sambal krecek"
             },
             {
                 id: 2,
-                name: "Pizza Margherita",
-                price: 65000,
-                emoji: "🍕",
-                description: "Pizza klasik dengan keju mozzarella, tomat, dan basil"
+                name: "Ayam Penyet",
+                price: 22000,
+                emoji: "🍗",
+                description: "Ayam goreng dipenyet dengan sambal terasi dan lalapan segar"
             },
             {
                 id: 3,
-                name: "Nasi Goreng Special",
-                price: 35000,
-                emoji: "🍛",
-                description: "Nasi goreng dengan telur, ayam, dan kerupuk"
+                name: "Nasi Rawon",
+                price: 25000,
+                emoji: "🍜",
+                description: "Nasi dengan rawon daging sapi, telur asin, dan kerupuk"
             },
             {
                 id: 4,
-                name: "Spaghetti Carbonara",
-                price: 55000,
-                emoji: "🍝",
-                description: "Pasta dengan saus krim, bacon, dan keju parmesan"
+                name: "Gado-Gado",
+                price: 15000,
+                emoji: "🥗",
+                description: "Salad sayuran dengan bumbu kacang, lontong, dan kerupuk"
             },
             {
                 id: 5,
-                name: "Sushi Set",
-                price: 75000,
-                emoji: "🍣",
-                description: "Set sushi dengan berbagai jenis ikan segar"
+                name: "Nasi Pecel",
+                price: 12000,
+                emoji: "🌿",
+                description: "Nasi dengan sayuran rebus dan sambal pecel kacang"
             },
             {
                 id: 6,
-                name: "Steak Sirloin",
-                price: 95000,
+                name: "Soto Ayam",
+                price: 20000,
+                emoji: "🍲",
+                description: "Soto ayam dengan nasi, telur, dan kerupuk"
+            },
+            {
+                id: 7,
+                name: "Rendang",
+                price: 28000,
                 emoji: "🥩",
-                description: "Steak daging sapi premium dengan kentang dan salad"
+                description: "Daging sapi rendang dengan nasi putih dan sambal"
+            },
+            {
+                id: 8,
+                name: "Nasi Liwet",
+                price: 16000,
+                emoji: "🍚",
+                description: "Nasi gurih dengan ayam suwir, telur, dan sayuran"
+            },
+            {
+                id: 9,
+                name: "Bakso",
+                price: 14000,
+                emoji: "🍜",
+                description: "Bakso daging sapi dengan mie, tahu, dan kuah kaldu"
+            },
+            {
+                id: 10,
+                name: "Nasi Padang",
+                price: 24000,
+                emoji: "🍽️",
+                description: "Nasi dengan rendang, ayam pop, sayur nangka, dan sambal"
+            },
+            {
+                id: 11,
+                name: "Lalapan Ayam",
+                price: 19000,
+                emoji: "🥒",
+                description: "Ayam goreng dengan lalapan mentah dan sambal terasi"
+            },
+            {
+                id: 12,
+                name: "Pecel Lele",
+                price: 17000,
+                emoji: "🐟",
+                description: "Lele goreng dengan nasi, lalapan, dan sambal"
+            },
+            {
+                id: 13,
+                name: "Es Teh Manis",
+                price: 5000,
+                emoji: "🧊",
+                description: "Es teh manis segar"
+            },
+            {
+                id: 14,
+                name: "Es Jeruk",
+                price: 7000,
+                emoji: "🍊",
+                description: "Es jeruk peras segar"
+            },
+            {
+                id: 15,
+                name: "Es Campur",
+                price: 12000,
+                emoji: "🍧",
+                description: "Es campur dengan cincau, kolang-kaling, dan sirup"
+            },
+            {
+                id: 16,
+                name: "Kopi Tubruk",
+                price: 6000,
+                emoji: "☕",
+                description: "Kopi tubruk panas khas warung"
+            },
+            {
+                id: 17,
+                name: "Jus Alpukat",
+                price: 10000,
+                emoji: "🥑",
+                description: "Jus alpukat segar dengan susu kental manis"
+            },
+            {
+                id: 18,
+                name: "Wedang Jahe",
+                price: 8000,
+                emoji: "🫖",
+                description: "Minuman jahe hangat dengan gula aren"
             }
         ];
 
